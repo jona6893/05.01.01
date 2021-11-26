@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 750px) {
 
     #headermobil {
         display: none;
@@ -8,9 +8,9 @@
         width: 100%;
         height: 80px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 0.5fr 0.5fr;
         grid-template-rows: 80px;
-        background-color: #899AB0;
+        background-color:#B5CBE8;
     }
 
     #icon {
@@ -27,13 +27,15 @@
         display: flex;
         gap: 20px;
         list-style: none;
-        justify-content: center;
+     
         align-items: center;
     }
 
     a{
         text-decoration: none;
         color: white;
+        font-family: 'Annie Use Your Telescope', cursive;
+        font-size: 1.8rem;
     }
 
 
@@ -41,7 +43,7 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 749px) {
 
     #headerdesktop {
         display: none;
@@ -53,7 +55,7 @@
         gap: 25%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 80px;
-        background-color: #899AB0;
+        background-color: #B5CBE8;
  
     }
 
@@ -72,6 +74,12 @@
         justify-items: baseline;
         flex-shrink: 0;
     }
+    #menuicon:hover {
+        background-color: #8ea6c5;
+        transition: 0.3s;
+        border-radius: 10px;
+
+    }
 
     #figicon {
    
@@ -88,13 +96,47 @@
     #hamburger {
         position: absolute;
         margin-top: 80px;
-        width: 75%;
+        width: 300px;
         height: 100%;
-        background-color: #717F91;
+        background-color: #8ea6c5;
         transition: 0.3s;
     }
 
     .hide {
         transform: translateX(-100%);
     }
+
+    ul {
+        display: grid;
+        gap: 20px;
+        list-style: none;
+        justify-content: baseline;
+        align-items: center;
+        margin-top: 75px;
+        grid-template-columns: 0.1fr 1fr 0.5fr;
+    }
+
+    li{
+        grid-column: 2/3;
+        padding: 10px;
+    }
+    li:hover{
+        background-color: #B5CBE8;
+        transition: 0.3s;
+        border-radius: 10px;
+
+    }
+
+    a{
+        grid-column: 2/3;
+        text-decoration: none;
+        color: white;
+        font-family: 'Annie Use Your Telescope', cursive;
+        font-size: 1.8rem;
+    }
+
+
+
+
+
 }

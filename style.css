@@ -5,25 +5,48 @@ img{
 
 body{
     margin: 0%;
-    padding: 0%;
+    padding: 0% 0%;
     background-color: #F2F2F2;
 }
 
+
+/** -------------------- DESKTOP VIEW START -------------------- */
+
+@media (min-width: 1000px) {
+    
+
+/** ---------- SECTION 0 START ---------- */
+
+#section0 {
+    margin-top: -20px;
+    background-image: url(https://picsum.photos/1920/1080?random=4);
+    background-size: cover;
+    background-position: 50%;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+/** ---------- SECTION 0 END ---------- */
+
+/** ---------- SECTION 1 START ---------- */
+
 #section1 {
     position: relative;
-/*     display: grid;
-    grid-template-columns: 1fr; */
+
     width: 100%;
     height: 100%;
 }
 
 #imagegrid {
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0%;
-    
-    
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 #headingtext {
@@ -33,33 +56,51 @@ body{
     top: 0px;
     left: 50%;
     width: 100%;
-    height: 100%;
-    background-color: rgb(255, 152, 152);
-    pointer-events: none;
+    height: 100vh;
+    background-color: #E8AB3A;
     object-fit: contain;
     display: flex;
     justify-content: center;
     flex-direction: column;
   
-
-    
 }
 
+
 #headingtext h2 {
-    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
     text-align: center;
+    color: #F2F2F2;
+    letter-spacing: 10px;
     
 }
 
 #headingtext p {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
     padding-inline: 5%;
+    color: #F2F2F2;
 }
 
 #image1, #image2, #image3{
     grid-column: 1/2;
-    object-fit: contain;
  
+}
+
+#image1 {
+    background-image: url(https://picsum.photos/1920/1080?random=1);
+    background-size: cover;
+    background-position: 50%;
+}
+#image2 {
+    background-image: url(https://picsum.photos/1920/1080?random=2);
+    background-size: cover;
+    background-position: 50%;
+}
+#image3 {
+    background-image: url(https://picsum.photos/1920/1080?random=3);
+    background-size: cover;
+    background-position: 50%;
 }
 
 #image1, #text1{
@@ -75,4 +116,103 @@ body{
 
 #text1, #text2, #text3 {
     grid-column: 2/3;
+}
+
+.displaynone {
+    display: none;
+}
+
+#h2flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#heading1 {
+   grid-row: 1/2; 
+   grid-column: 1/2;
+   margin-right: 250px;
+}
+#heading2 {
+    grid-row: 1/2; 
+    grid-column: 1/2;
+    margin-left: 275px;
+}
+#heading3 {
+    grid-row: 2/3; 
+    grid-column: 1/2;
+
+}
+
+
+/** ---------- SECTION 1 END ---------- */
+
+/** ---------- SECTION 2 START ---------- */
+
+#section2 {
+    background-color: #F24C3D;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 700px;
+}
+
+#youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    /* border: 35px #9C1919 solid; */
+    border-radius: 25px 25px 25px 25px;
+    -webkit-box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
+-moz-box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
+box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
+}
+
+/** ---------- SECTION 2 END ---------- */
+
+} /** -------------------- DESKTOP VIEW END -------------------- */
+
+/** -------------------- MOBILE VIEW START -------------------- */
+
+@media (max-width:999px) {
+    
+/** ---------- SECTION 0 START ---------- */
+
+#section0 {
+    
+}
+
+
+
+
+
+
+/** ---------- SECTION 0 END ---------- */
+
+/** ---------- SECTION 1 START ---------- */
+
+/** ---------- SECTION 1 END ---------- */
+
+/** ---------- SECTION 2 START ---------- */
+
+/** ---------- SECTION 2 END ---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
