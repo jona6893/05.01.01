@@ -1,6 +1,6 @@
 img{
     width: 100%;
-
+    display: block;
 }
 
 body{
@@ -10,32 +10,39 @@ body{
 }
 
 #section1 {
-    display: grid;
-    grid-template-columns: 1fr;
+    position: relative;
+/*     display: grid;
+    grid-template-columns: 1fr; */
     width: 100%;
-    height: 100vh;
-    scroll-snap-type: mandatory;
+    height: 100%;
 }
 
-#images {
-    object-fit: contain;
-    overflow-y: scroll;
+#imagegrid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 0%;
-    margin: 0%;
+    
     
 }
 
 #headingtext {
-    position: absolute;
+    position: sticky;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    top: 0px;
     left: 50%;
-    width: 50%;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: rgb(255, 152, 152);
     pointer-events: none;
     object-fit: contain;
     display: flex;
     justify-content: center;
     flex-direction: column;
+  
+
+    
 }
 
 #headingtext h2 {
@@ -47,4 +54,25 @@ body{
 #headingtext p {
     font-size: 1.5rem;
     padding-inline: 5%;
+}
+
+#image1, #image2, #image3{
+    grid-column: 1/2;
+    object-fit: contain;
+ 
+}
+
+#image1, #text1{
+    grid-row: 1/2;
+}
+#image2, #text2{
+    grid-row: 2/3;
+}
+#image3, #text3{
+    grid-row: 3/4;
+}
+
+
+#text1, #text2, #text3 {
+    grid-column: 2/3;
 }
