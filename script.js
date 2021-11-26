@@ -1,5 +1,6 @@
 const button = document.querySelector("#menuicon");
 const hamburger = document.querySelector("#hamburger")
+const closeontouch = document.querySelector("#closeontouch");
 const hide = document.querySelector(".hide")
 const displaynone = document.querySelector(".displaynone");
 const heading1 = document.querySelector("#heading1");
@@ -9,6 +10,12 @@ const heading3 = document.querySelector("#heading3");
 // When hamburger menu is pressed an element slides out/in //
 button.addEventListener("click", () => {
     hamburger.classList.toggle("hide")
+    closeontouch.classList.toggle("hide")
+})
+
+closeontouch.addEventListener("click", () => {
+  hamburger.classList.toggle("hide");
+  closeontouch.classList.toggle("hide");
 })
 
 
