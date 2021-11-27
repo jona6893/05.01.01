@@ -68,7 +68,7 @@ let observer3 = new IntersectionObserver(
       heading3.classList.remove("displaynone");
       /* heading2.classList.add("displaynone"); */
     } else if (entries[0].isIntersecting === false) {
-      heading3.classList.add("displaynone");
+      /* heading3.classList.add("displaynone"); */
     }
    
 

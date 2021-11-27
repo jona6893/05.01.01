@@ -31,7 +31,7 @@ body{
     font-size: 3rem;
     background-color: #961818;
     color: white;
-    padding: 5%;
+    border: solid #961818 50px;
     border-radius: 15px 15px 15px 15px;
      font-family: 'Anton', sans-serif;
 }
@@ -69,7 +69,8 @@ body{
     height: 100vh;
     background-color: #E8AB3A;
     object-fit: contain;
-    display: flex;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr;
     justify-content: center;
     flex-direction: column;
   
@@ -90,6 +91,7 @@ body{
     font-size: 2rem;
     padding-inline: 5%;
     color: #F2F2F2;
+    grid-row: 4/5;
 }
 
 #image1, #image2, #image3{
@@ -133,15 +135,15 @@ body{
 }
 
 #h2flex {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-top: -50px;
+    grid-row: 2/3;
 }
 
-#heading1 {
+/* #heading1 {
    grid-row: 1/2; 
    grid-column: 1/2;
    margin-right: 250px;
@@ -150,10 +152,9 @@ body{
     grid-row: 1/2; 
     grid-column: 1/2;
     margin-left: 275px;
-}
+} */
 #heading3 {
-    grid-row: 2/3; 
-    grid-column: 1/2;
+    grid-row: 3/4; 
 
 }
 
@@ -184,6 +185,28 @@ box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
 
 /** ---------- SECTION 2 END ---------- */
 
+/** ---------- FOOTER START ----------*/
+
+footer{
+    width: auto;
+    height: 250px;
+    background-color: #b5cbe8;
+    margin: auto;
+    display: grid;
+}
+
+footer h1{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    width: auto;
+    color: white;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+/** ---------- FOOTER END ----------*/
+
+
 } 
 /** -------------------- DESKTOP VIEW END -------------------- */
 
@@ -207,10 +230,10 @@ box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
 }
 
 #section0 h1{
-    font-size: 2rem;
+    font-size: 1.6rem;
     background-color: #961818;
     color: white;
-    padding: 5%;
+    border: solid #961818 40px;
     border-radius: 15px 15px 15px 15px;
      font-family: 'Anton', sans-serif;
 }
@@ -232,7 +255,7 @@ box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
     display: grid;
     grid-template-columns: 1fr;
     padding: 0%;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
 }
 
 
@@ -266,7 +289,7 @@ box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
     top: 0px;
     left: 50%;
     width: 100%;
-    height: 250px;
+    height: 150px;
     background-color: #E8AB3A;
     object-fit: contain;
     display: flex;
@@ -279,7 +302,8 @@ box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+
 }
 
 #headingtext h2 {
@@ -287,8 +311,8 @@ box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
     font-size: 1.2rem;
     text-align: center;
     color: #F2F2F2;
-    letter-spacing: 10px;
-    
+    letter-spacing: 8px;
+    margin-bottom: -10px;
 }
 
 #headingtext p {
@@ -319,6 +343,29 @@ box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
     display: none;
 }
 /** ---------- SECTION 2 END ---------- */
+
+
+/** ---------- FOOTER START ----------*/
+
+footer{
+    width: auto;
+    height: 250px;
+    background-color: #b5cbe8;
+    margin: auto;
+    display: grid;
+}
+
+footer h1{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    width: auto;
+    color: white;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+/** ---------- FOOTER END ----------*/
+
 
 
 
