@@ -100,17 +100,17 @@ body{
 }
 
 #image1 {
-    background-image: url(https://picsum.photos/1920/1080?random=1);
+    background-image: url(images/olives.jpg);
     background-size: cover;
     background-position: 50%;
 }
 #image2 {
-    background-image: url(https://picsum.photos/1920/1080?random=2);
+    background-image: url(images/cheese.jpg);
     background-size: cover;
     background-position: 50%;
 }
 #image3 {
-    background-image: url(https://picsum.photos/1920/1080?random=3);
+    background-image: url(images/wine.jpg);
     background-size: cover;
     background-position: 50%;
 }
@@ -277,19 +277,19 @@ footer h1{
 
 
 #image1 {
-    background-image: url(https://picsum.photos/1920/1080?random=1);
+    background-image: url(images/olives.jpg);
     background-size: cover;
     background-position: 50%;
     height: 600px;
 }
 #image2 {
-    background-image: url(https://picsum.photos/1920/1080?random=2);
+    background-image: url(images/cheese.jpg);
     background-size: cover;
     background-position: 50%;
     height: 600px;
 }
 #image3 {
-    background-image: url(https://picsum.photos/1920/1080?random=3);
+    background-image: url(images/wine.jpg);
     background-size: cover;
     background-position: 50%;
     height: 600px;

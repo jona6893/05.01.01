@@ -50,6 +50,17 @@ body{
         font-size: 1.8rem;
     }
 
+    li{
+        padding: 1%;
+        border-radius: 10px 10px 10px 10px;
+    }
+
+    li:hover {
+        padding: 1%;
+        border-radius: 10px 10px 10px 10px;
+        background-color: #F24C3D;
+        transition: 0.5s;
+    }
 
 
 }
