@@ -183,6 +183,10 @@ iframe{
 box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
 }
 
+video{
+    
+}
+
 /** ---------- SECTION 2 END ---------- */
 
 /** ---------- FOOTER START ----------*/
@@ -292,7 +296,8 @@ footer h1{
     height: 150px;
     background-color: #E8AB3A;
     object-fit: contain;
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     flex-direction: column;
   
@@ -303,7 +308,7 @@ footer h1{
     justify-content: center;
     align-items: center;
     gap: 15px;
-
+    grid-row: 1/2;
 }
 
 #headingtext h2 {
@@ -320,6 +325,11 @@ footer h1{
     font-size: 1.2rem;
     padding-inline: 5%;
     color: #F2F2F2;
+    grid-row: 3/4;
+}
+
+#heading3{
+    grid-row: 2/3;
 }
 
 /** ---------- SECTION 1 END ---------- */

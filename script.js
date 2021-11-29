@@ -28,7 +28,8 @@ let observer1 = new IntersectionObserver(
     // isIntersecting is false when element and viewport don't overlap
     if (entries[0].isIntersecting === true) {
         console.log("Element has just become visible in screen1", this);
-        heading1.classList.remove("displaynone")
+        /* heading1.classList.remove("displaynone") */
+        heading3.classList.add("displaynone");
         heading2.classList.add("displaynone");
     } else if (entries[0].isIntersecting === false) {
         /* heading1.classList.add("displaynone"); */
