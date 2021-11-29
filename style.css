@@ -184,7 +184,7 @@ box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
 }
 
 video{
-    
+    width: 75%;
 }
 
 /** ---------- SECTION 2 END ---------- */
@@ -343,10 +343,18 @@ footer h1{
 
 #section2 iframe {
     width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
     border-radius: 25px 25px 25px 25px;
     -webkit-box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
 -moz-box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
 box-shadow: 8px 8px 13px -7px rgba(21, 21, 24, 1);
+}
+
+video{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
  .displaynone {
