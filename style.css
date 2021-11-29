@@ -19,7 +19,7 @@ body{
 
 #section0 {
     display: grid;
-    background-image: url(https://picsum.photos/1920/1080?random=4);
+    background-image: url(images/splashimage.jpg);
     background-size: cover;
     background-position: 50%;
     height: 100vh;
@@ -230,8 +230,6 @@ footer h1{
 /** -------------------- DESKTOP VIEW END -------------------- */
 
 
-
-
 /** -------------------- MOBILE VIEW START -------------------- */
 
 @media (max-width:999px) {
@@ -240,7 +238,7 @@ footer h1{
 
 #section0 {
     display: grid;
-    background-image: url(https://picsum.photos/1920/1080?random=4);
+    background-image: url(images/splashimage.jpg);
     background-size: cover;
     background-position: 50%;
     height: 600px;
